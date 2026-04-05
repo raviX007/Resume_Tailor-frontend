@@ -3,7 +3,7 @@
 #
 # Usage:
 #   ./push-secrets.sh resume-tailor/backend ../resume-tailor/backend/.env
-#   ./push-secrets.sh job-tracker/api      ../job-tracker/api/.env
+#   ./push_env.sh resume-tailor/frontend .env
 #   ./push-secrets.sh job-tracker/pipeline ../job-tracker/pipeline/.env
 
 SECRET_NAME="$1"

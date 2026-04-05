@@ -16,7 +16,7 @@ env:
   AWS_REGION: ap-south-1
   ECR_REPOSITORY: resume-tailor-frontend
   # Public URL — not a secret (visible in browser network tab)
-  BACKEND_URL: http://13.126.202.171
+  BACKEND_URL: http://13.126.202.171:8001
 
 jobs:
   test:
