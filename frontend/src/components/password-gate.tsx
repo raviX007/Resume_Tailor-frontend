@@ -84,15 +84,20 @@ export function PasswordGate({ onAuthenticated }: PasswordGateProps) {
 
   const handleSignUp = async () => {
     setError("");
+    const regex = /^[a-zA-Z0-9.@_]+$/;
 
-    if (password !== confirmPassword) {
-      setError("Passwords do not match");
-      return;
-    }
-    if (password.length < 8) {
-      setError("Password must be at least 8 characters");
-      return;
-    }
+   if (password !== confirmPassword) {
+    setError("Passwords do not match");
+    return;
+  }
+  if (password.length < 8) {
+    setError("Password must be at least 8 characters");
+    return;
+  }
+  if (!regex.test(username)) {
+    setError("Username can only contain letters, numbers, . , _ and @");
+    return;
+  }
 
     setLoading(true);
 
