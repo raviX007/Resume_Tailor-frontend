@@ -16,7 +16,7 @@ env:
   AWS_REGION: ap-south-1
   ECR_REPOSITORY: resume-tailor-frontend
   # Public URL — not a secret (visible in browser network tab)
-  BACKEND_URL: https://resume-tailor.duckdns.org
+  BACKEND_URL: https://resume-tailor.ravi-raj.dev
 
 jobs:
   test:
